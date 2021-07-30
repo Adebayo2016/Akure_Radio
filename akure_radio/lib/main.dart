@@ -155,23 +155,16 @@ class about_akure extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            ///Properties of app bar
-            ///
-            /// Color of app bar when it is collapsed
+           
             backgroundColor: Colors.green,
 
-            /// Set to false so that appbar is always invisible after
-            /// collapsing
-            /// If set to true here, the app bar will expand as soon as you
-            /// start scrolling up even if you haven't reached the top
+            
             floating: false,
 
-            /// To make the app bar visible at all times after collapsing
-            /// we set pinned to true
             pinned: true,
             expandedHeight: 200.0,
 
-            ///Properties of the App Bar when it is expanded
+            
             flexibleSpace: FlexibleSpaceBar(
               background: Image(
                 image: AssetImage('Images/img1.jpg'),
@@ -238,23 +231,16 @@ class scheduleState extends State<schedule> {
         slivers: <Widget>[
           ///First sliver is the App Bar
           SliverAppBar(
-            ///Properties of app bar
-            ///
-            /// Color of app bar when it is collapsed
+           
             backgroundColor: Colors.green,
 
-            /// Set to false so that appbar is always invisible after
-            /// collapsing
-            /// If set to true here, the app bar will expand as soon as you
-            /// start scrolling up even if you haven't reached the top
             floating: false,
 
-            /// To make the app bar visible at all times after collapsing
-            /// we set pinned to true
+            
             pinned: true,
             expandedHeight: 200.0,
 
-            ///Properties of the App Bar when it is expanded
+        
             flexibleSpace: FlexibleSpaceBar(
               background: Image(
                 image: AssetImage('Images/img1.jpg'),
@@ -275,9 +261,6 @@ class scheduleState extends State<schedule> {
             ],
           ),
 
-          ///Next sliver is the Sliver list that is used here to
-          ///allow the user to scroll and observe the collapsing
-          ///behaviour of SliverAppBar widget
           SliverFixedExtentList(
             itemExtent: 100.0,
             delegate: SliverChildListDelegate(
